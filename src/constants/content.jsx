@@ -2,7 +2,6 @@ import { FaCartShopping } from "react-icons/fa6";
 
 export const navItems = [
     {label: "Home", href:"/"},
-    { label: "Best Sellers", href: "#best" },
     { label: "Hair Xtensions", href: "/xtensions" },
     { label: "Hair Care", href: "/care" },
     { label: <FaCartShopping className="text-purple-600"/>, href: "/cart" },
