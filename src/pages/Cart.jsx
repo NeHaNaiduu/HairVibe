@@ -1,5 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
+import CartSummary from '../components/CartSummary';
 import CartItem from '../components/CartItem';
 // import { useCart } from '../CartContext'
 
@@ -7,26 +8,31 @@ const Cart = () => {
 
     // const { cart } = useCart();
 
-    const elements=useSelector((state)=>state.reducer.itemList)
+    // const elements=useSelector((state)=>state.reducer.itemList)
+    const {itemList,totalPrice} = useSelector((state) => state.reducer);
 
-    if (elements.length > 0) {
+    if (itemList.length > 0) {
       return (
         <div className='mt-24'>
           <h1 className='text-center text-2xl font-bold underline'>Your Cart</h1>
-          <ul className='flex flex-col gap-4 my-10 mx-2'>
-            {elements.map((item) => (
-              <li key={item.id} className='w-full sm:w-1/2 md:w-1/3'>
-                <CartItem
-                  name={item.name}
-                  price={item.price}
-                  quantity={item.quantity}
-                  totalPrice={item.totalPrice}
-                  id={item.id}
-                  image={item.image}
-                />
-              </li>
-            ))}
-          </ul>
+          <div className='md:flex md:items-start items-center justify-evenly'>
+          <div className='md:flex md:mr-6 md:overflow-y-auto md:max-h-[calc(100vh-150px)] md:my-10 md:px-10'>
+            <ul className='flex flex-col gap-4 my-10'>
+              {itemList.map((item) => (
+                <li key={item.id} className='w-full'>
+                  <CartItem
+                    name={item.name}
+                    price={item.price}
+                    quantity={item.quantity}
+                    id={item.id}
+                    image={item.image}
+                  />
+                </li>
+              ))}
+            </ul>
+          </div>
+            <CartSummary totalAmount={totalPrice} />
+          </div>
         </div>
       );
     } else {

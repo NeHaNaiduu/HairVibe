@@ -12,18 +12,6 @@ const Navbar = () => {
         setBars(!bars);
     }
 
-    const handleScroll=(e,targetId)=>{
-        e.preventDefault();
-        const element = document.getElementById(targetId);
-        if(element){
-            const offsetTop=element.offsetTop=-80;
-            window.scrollTo({
-                top:offsetTop,
-                behavior:'smooth'
-            })
-        }
-        setBars(false)
-    }
 
   return (
     <nav className=' fixed flex w-full items-center justify-center top-4 z-50 bg-white'>
@@ -32,7 +20,7 @@ const Navbar = () => {
                 <div className="flex items-center flex-shrink-0">
                     <img src="logo.png" alt="" className="w-35 h-20"/>
                 </div>
-                <ul className='hidden lg:flex ml-14 space-x-12'>
+                <ul className='hidden lg:items-center lg:flex ml-14 space-x-12'>
                     {navItems.map((item,index)=>(
                         <li key={index} className='hover:border-b font-semibold hover:text-purple-500'>
                             <NavLink to={item.href}>{item.label}</NavLink>

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 // import { useCart } from '../CartContext'
 
-const Xtensions = ({name,id,price}) => {
+const Xtensions = () => {
 
     // const {addToCart}=useCart();
 
@@ -20,12 +20,12 @@ const Xtensions = ({name,id,price}) => {
              id:item.id, 
              name:item.name, 
              image:item.image, 
-             totalPrice: Number(item.price) }));
+             price: item.price }));
         };
 
   return (
-    <div className='bg-neutral-700 flex items-center justify-center px-4 mt-20'>
-        <div id="xtensions" className='my-20 grid grid-cols md:grid-cols-3 lg:grid-cols-5 sm:grid-cols-2 sm:gap-20 gap-10 items-center justify-between place-items-center'>
+    <div className='flex items-center justify-center px-4 mt-20'>
+        <div id="xtensions" className='my-20 grid grid-cols md:grid-cols-3 xl:grid-cols-5 lg:grid-cols-4 sm:grid-cols-2 sm:gap-20 gap-10 items-center justify-between place-items-center mx-2'>
             {hairExtensions.map((item)=>(
                 <motion.div
                 whileInView={{opacity:1,y:0}}
@@ -33,13 +33,13 @@ const Xtensions = ({name,id,price}) => {
                 whileHover={{ scale: 1.1 }}
                 transition={{duration:0}} 
                 key={item.id} 
-                className='mx-auto w-full sm:w-60 shadow-3xl rounded flex flex-col hover:scale-150 duration-200 cursor-pointer bg-slate-400'>
+                className='mx-auto w-full sm:w-60 shadow-3xl rounded flex flex-col hover:scale-150 duration-200 cursor-pointer bg-white'>
                     <img src={item.image} alt={item.name}  className='p-2 h-72 md:h-72 rounded'/>
                     <div className='flex justify-between px-2 my-1.5 items-center'>
                         <h2 className='font-semibold'>{item.name}</h2>
                         <p>{item.price}</p>
                     </div>
-                    <button className='cursor-pointer bg-gradient-to-r from-purple-400 to-pink-300 p-3 font-bold rounded hover:bg-gradient-to-l text-white hover:text-purple-800' onClick={()=>handleAddtoCart(item)}>Add to Cart</button>
+                    <button className='cursor-pointer p-3 font-bold rounded bg-blue-300 hover:text-purple-800' onClick={()=>handleAddtoCart(item)}>Add to Cart</button>
                 </motion.div>
             ))}
         </div>
