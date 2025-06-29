@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
         <div className='flex flex-col gap-6'>
             <div className='text-center'>
-                Copyright@NehaNaidu | 2024. All rights reserved.
+                Copyright@NehaNaidu | 2025. All rights reserved.
             </div>
             <div className='flex justify-between md:w-1/3'>
                 <div className='hover:border-b cursor-pointer'>Powered by Shopify</div>

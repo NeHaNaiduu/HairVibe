@@ -1,9 +1,14 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import {motion} from 'framer-motion'
 
 const Care = () => {
+
+useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className='md:px-12 p-4 max-w-screen-2xl mx-auto mt-24'>
+    <div className='md:px-12 p-4 mx-auto mt-24 overflow-x-hidden'>
         <div className='bg-gradient-to-t from-neutral-900 to-neutral-400 rounded-xl md:p-9 px-4 py-9 mb-32'>
             <div className='flex flex-col md:flex-row-reverse justify-between items-center gap-10'>
                 <div>

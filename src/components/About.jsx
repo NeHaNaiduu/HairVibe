@@ -32,7 +32,7 @@ const About = () => {
             initial={{opacity:0, x:-100}}
             transition={{duration:0.5}} 
             className='w-full p-4 lg:w-1/2'>
-                <img src="images/s2.jpg" alt="" className='rounded-xl lg:rotate-3 w-3/4'/>
+                <img src="images/s2.jpg" alt="" className='rounded-xl lg:rotate-3 md:w-3/4 w-full'/>
             </motion.div>
             <motion.div 
             whileInView={{opacity:1,x:0}}

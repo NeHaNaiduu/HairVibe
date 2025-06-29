@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Hero from '../components/Hero';
 import Mains from '../components/Mains';
 import Markline from '../components/Markline';
@@ -9,6 +9,11 @@ import About from '../components/About';
 
 
 const Home = () => {
+
+useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main className='overflow-x-hidden antialiased'>
       <Hero />

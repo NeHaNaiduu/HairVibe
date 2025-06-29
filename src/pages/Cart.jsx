@@ -1,10 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import CartSummary from '../components/CartSummary';
 import CartItem from '../components/CartItem';
 // import { useCart } from '../CartContext'
 
 const Cart = () => {
+
+  useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
     // const { cart } = useCart();
 
@@ -15,7 +19,7 @@ const Cart = () => {
       return (
         <div className='mt-24'>
           <h1 className='text-center text-2xl font-bold underline'>Your Cart</h1>
-          <div className='md:flex md:items-start items-center justify-evenly'>
+          <div className='lg:flex lg:items-start items-center justify-evenly'>
           <div className='md:flex md:mr-6 md:overflow-y-auto md:max-h-[calc(100vh-150px)] md:my-10 md:px-10'>
             <ul className='flex flex-col gap-4 my-10'>
               {itemList.map((item) => (

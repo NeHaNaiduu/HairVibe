@@ -125,8 +125,10 @@ const Best = () => {
             <h1 className='text-center mb-20 sm:mb-14 text-3xl sm:text-4xl md:text-5xl lg:text-6xl'>Newest <span className='bg-gradient-to-r from-red-600 to-green-500 bg-clip-text text-transparent italic'>Trending</span></h1>
             <Slider {...settings}>
                 {bestItems.map((item, index) => (
-                <div key={index} className='flex items-center justify-center'>
-                    <img src={item.href} alt={item.label} className='w-56 h-80'/>
+                <div key={index} className='flex items-center justify-center outline-none'>
+                    <a href="/xtensions">
+                      <img src={item.href} alt={item.label} className='w-56 h-80'/>
+                    </a>
                 </div>
                 ))}
             </Slider>
