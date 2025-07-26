@@ -55,7 +55,10 @@ const Navbar = () => {
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className='py-2 my-4 hover:border-b font-semibold relative'>
-                  <NavLink to={item.href} className="relative flex items-center justify-center">
+                  <NavLink 
+                  to={item.href} 
+                  onClick={() => setBars(false)}
+                  className="relative flex items-center justify-center">
                     {item.label}
                     {item.href === "/cart" && totalQuantity > 0 && (
                       <span className="absolute -top-2 -right-3 bg-red-600 text-white rounded-full w-5 h-5 text-xs flex items-center justify-center">

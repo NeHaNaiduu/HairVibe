@@ -2,7 +2,6 @@ import React, {useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import CartSummary from '../components/CartSummary';
 import CartItem from '../components/CartItem';
-// import { useCart } from '../CartContext'
 
 const Cart = () => {
 
@@ -10,9 +9,6 @@ const Cart = () => {
       window.scrollTo(0, 0);
     }, []);
 
-    // const { cart } = useCart();
-
-    // const elements=useSelector((state)=>state.reducer.itemList)
     const {itemList,totalPrice} = useSelector((state) => state.reducer);
 
     if (itemList.length > 0) {

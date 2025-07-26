@@ -8,18 +8,18 @@ export const navItems = [
   ];
 
 export const mainItems=[
-    { label: "Beautiful Headbands", href: "images/main1.png",desc:"Transform your look with our beautiful headbands, featuring exquisite craftsmanship and luxurious materials that bring a touch of glamour to everyday wear." },
-    { label: "Dramatic Strands", href: "images/main4.png",desc:"Dare to stand out with our dramatic hair strands, each one meticulously designed to add an element of high-impact glamour and captivating allure to your tresses." },
-    { label: "Volumized Hair Toppers", href: "images/main2.png",desc:"Say goodbye to flat hair and hello to stunning volume with our expertly crafted hair toppers, providing you with a fuller, more vibrant mane that radiates confidence." },
-    { label: "Elegant Accessories", href: "images/main3.png",desc:"Experience the charm of true elegance with our hair accessories, crafted to provide a delicate balance of style and sophistication that enhances your overall look with grace." },
+    {id:1, label: "Beautiful Headbands", href: "images/main1.png",desc:"Transform your look with our beautiful headbands, featuring exquisite craftsmanship and luxurious materials that bring a touch of glamour to everyday wear." },
+    {id:2, label: "Dramatic Strands", href: "images/main4.png",desc:"Dare to stand out with our dramatic hair strands, each one meticulously designed to add an element of high-impact glamour and captivating allure to your tresses." },
+    {id:3, label: "Volumized Hair Toppers", href: "images/main2.png",desc:"Say goodbye to flat hair and hello to stunning volume with our expertly crafted hair toppers, providing you with a fuller, more vibrant mane that radiates confidence." },
+    {id:4, label: "Elegant Accessories", href: "images/main3.png",desc:"Experience the charm of true elegance with our hair accessories, crafted to provide a delicate balance of style and sophistication that enhances your overall look with grace." },
 ];
 
 export const bestItems=[
-  {href:"images/b1.jpg"},
-  {href:"images/b2.jpg"},
-  {href:"images/b3.jpg"},
-  {href:"images/b4.jpg"},
-  {href:"images/b5.jpg"}
+  {id:1,href:"images/b1.jpg"},
+  {id:2,href:"images/b2.jpg"},
+  {id:3,href:"images/b3.jpg"},
+  {id:4,href:"images/b4.jpg"},
+  {id:5,href:"images/b5.jpg"}
 ];
 
 export const hairExtensions=[
@@ -61,8 +61,8 @@ export const hairExtensions=[
 ];
 
 export const DemoVideos=[
-  {loc:"v1.mp4"},
-  {loc:"v3.mp4"},
-  {loc:"v2.mp4"},
-  {loc:"v4.mp4"}
+  {id:1,loc:"v1.mp4"},
+  {id:2,loc:"v3.mp4"},
+  {id:3,loc:"v2.mp4"},
+  {id:4,loc:"v4.mp4"}
 ]

@@ -7,28 +7,10 @@ import { fadeIn } from '../constants/anim'
 const Mains = () => {
   return (
     <div className='flex items-center justify-center my-20'>
-      {/* <div className='grid grid-cols-1 px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full
-      sm:px-10 justify-between items-center gap-5 py-20 bg-gradient-to-b from-pink-200 '>
-          {mainItems.map((item)=>(
-              <div key={item.label} className=' relative rounded-xl border-2 border-purple-300 cursor-pointer hover:-translate-y-4 duration-200 shadow-3xl mains-container main-cards '>
-                    <div className='flex items-center justify-center'>
-                      <img src={item.href} alt={item.label} className='w-60 h-80 md:w-80 md:h-96 z-40 main-image'/>
-                    </div>
-                    <div className='flex items-center justify-center'>
-                      <h2 className='text-center flex items-center justify-center gap-10  inline-block text-xl font-semibold mains-head sm:text-sm md:text-xl text-purple-600 bg-white absolute'>{item.label}</h2>
-                    </div>
-                  <div className='main-description'>
-                    <div className='desc-lines mb-2 mt-1 px-1'>
-                      {item.desc}
-                    </div>
-                    <button className='border py-1.5 px-5 rounded border-purple-700 bg-red-200 hover:bg-purple-700 hover:text-white duration-200 text-neutral-700 '>Explore</button>
-                  </div>
-              </div>
-          ))}
-      </div> */}
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-6'>
         {mainItems.map((item)=>(
           <motion.div 
+          key={item.id}
           variants={fadeIn("up",0.3)}
           initial="hidden"
           whileInView={"show"}

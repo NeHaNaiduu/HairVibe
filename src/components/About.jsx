@@ -3,25 +3,6 @@ import {motion} from 'framer-motion'
 
 const About = () => {
   return (
-    // <div className='flex items-center justify-center my-40 lg:pr-20'>
-    //     <div className='flex flex-col lg:flex-row lg:justify-evenly px-2 justify-between'>
-    //         <div className='flex flex-col lg:items-start items-center lg:w-1/3 w-full'>
-    //             <h1 className='text-3xl sm:text-5xl md:text-7xl mb-10 bg-gradient-to-b from-orange-500 to-red-300 bg-clip-text text-transparent'>Who are We?</h1>
-    //             <p className='font-serif text-neutral-500 text-center lg:text-left'>
-    //                 Welcome to Hair Vibe, where our passion for beauty and excellence drives us to provide the finest hair extensions in the industry. Founded on a commitment to quality and customer satisfaction, we specialize in offering premium, 100% human hair extensions that blend seamlessly with your natural hair. Our mission is to empower individuals to express their unique style and enhance their confidence with luxurious, versatile hair solutions. At HairVibe, we pride ourselves on our meticulous attention to detail, from sourcing the highest-grade hair to ensuring every product meets our rigorous standards.
-    //             </p>
-    //             <button className='border py-3 px-10 hover:bg-slate-400 mt-10'>Learn More</button>
-    //         </div>
-    //         <div>
-    //             <div className='lg:relative mt-20 sm:mt-32 md:mt-38 flex justify-between md:px-20'>
-    //                 <img src="images/s1.jpg" alt="" className='lg:absolute rounded lg:w-60 w-40 lg:-bottom-10 lg:-right-40 md:w-56'/>
-    //                 <img src="images/s2.jpg" alt="" className='rounded lg:w-40 w-40 lg:absolute lg:-top-28 lg:left-60 md:w-56'/>
-    //                 <img src="images/s3.jpg" alt="" className='rounded lg:w-72 w-40 md:w-56'/>
-    //             </div>
-    //         </div>
-    //     </div>
-    // </div>
-
     <section className='container mx-auto pb-8 bg-gradient-to-b from-white via-pink-300 to-purple-400' id='about'>
         <h2 className='mb-8 text-center text-3xl tracking-tighter lg:text-4xl'>
             Who are We?

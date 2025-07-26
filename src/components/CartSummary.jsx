@@ -1,6 +1,18 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { resetCart } from '../store/CartSlice';
 
 const CartSummary = ({ totalAmount }) => {
+
+const dispatch = useDispatch();
+
+  const handleCheckout = () => {
+    alert('Proceeding to checkout');
+
+    dispatch(resetCart());
+
+  };
+
   return (
     <div className='bg-blue-300 p-6 rounded mx-2 mb-5 shadow-md mt-6 md:w-1/3 md:mt-20'>
       <h2 className='text-xl font-bold mb-4'>Cart Summary :</h2>
@@ -27,7 +39,7 @@ const CartSummary = ({ totalAmount }) => {
       </div>
       <button 
         className='w-full bg-black text-white py-2 rounded hover:bg-blue-600'
-        onClick={() => alert('Proceeding to checkout')}
+        onClick={handleCheckout}
       >
         Checkout
       </button>

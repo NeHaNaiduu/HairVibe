@@ -3,7 +3,6 @@ import {useDispatch} from 'react-redux'
 import { addToCart,removeFromCart } from '../store/CartSlice'
 
 const CartItem = ({name,image,price,quantity,id}) => {
-    console.log("CartItem props:", { name, image, price, quantity, id });
 
     const dispatch=useDispatch();
     const increment=()=>{
@@ -15,7 +14,7 @@ const CartItem = ({name,image,price,quantity,id}) => {
 
   return (  
     <div className='container'>
-        <div className='border flex justify-between py-5 px-10 items-center w-[400px]'>
+        <div className='border flex justify-between py-5 px-10 items-center md:w-[400px]'>
             <img src={image} alt="" className='w-32'/>
             <div className='flex flex-col items-start w-1/3'>
                 <h3 className='font-semibold mb-2'>{name}</h3>

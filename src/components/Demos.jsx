@@ -6,7 +6,7 @@ const Demos = () => {
     <div className='md:flex hidden items-center justify-center mt-20 mb-48'>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-10 sm:px-0'>
             {DemoVideos.map((item)=>(
-                <div className='md:w-80 w-full md:h-96 mb-5'>
+                <div className='md:w-80 w-full md:h-96 mb-5' key={item.id}>
                     <video className='w-full h-full' loop muted autoPlay>
                         <source src={item.loc} type='video/mp4'/>
                     </video>
